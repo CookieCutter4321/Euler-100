@@ -44,7 +44,6 @@ day_of_week = 1 # 1 = mon, 2 = tues, 3 = wed, 4 = thurs, 5 = fri, 6 = sat, 7 = s
 while year <= 2000:
     
     if day == 1 and day_of_week % 7 == 0 and year >= 1901:
-        print(month,day,year)
         res += 1
 
     # calculate next date after increment
@@ -61,7 +60,4 @@ while year <= 2000:
     if month > 12: # new year
         month = 1
         year += 1
-
-
-
 print(res)
